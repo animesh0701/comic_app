@@ -1,8 +1,12 @@
-import ListGroup from "./components/listGroup";
-
+import ListGroup from "./components/ListGroup";
+const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 function App() {
-  return <div><ListGroup/></div>
+  return (
+    <div>
+      <ListGroup items={comics} heading="Comics" />
+    </div>
+  );
 }
 
 export default App;

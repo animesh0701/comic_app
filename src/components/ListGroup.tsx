@@ -1,17 +1,21 @@
 import { useState } from "react";
 
-function ListGroup() {
-  const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
+// {items: [], heading: string}
+interface Props {
+  items: string[];
+  heading: string;
+}
 
+function ListGroup({ items, heading }: Props) {
   // Hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <>
-      <h1>List</h1>
-      {comics.length === 0 && <p>No item found</p>}
+      <h1>{heading}</h1>
+      {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
-        {comics.map((comic, index) => (
+        {items.map((comic, index) => (
           <li
             className={
               selectedIndex == index
