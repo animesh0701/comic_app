@@ -2,6 +2,7 @@ import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import { useState } from "react";
+import { BsFillCartCheckFill } from "react-icons/bs";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -24,6 +25,7 @@ function App() {
         </Alert>
       )}
       <Button onClick={() => setAlertVisibility(true)}>Buy Now</Button>
+      <BsFillCartCheckFill color="red" size={40} />
     </div>
   );
 }
