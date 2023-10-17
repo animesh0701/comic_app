@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "./Button";
-import "./ListGroup.css";
 
 // {items: [], heading: string}
 interface Props {
