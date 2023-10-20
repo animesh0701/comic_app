@@ -2,9 +2,10 @@ import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import { useState } from "react";
-import { BsFillCartCheckFill } from "react-icons/bs";
+import { BsFillCartCheckFill, BsHeart, BsHeartFill } from "react-icons/bs";
 import Button1 from "./components/Button1";
 import styles from "./Button1.module.css";
+import Like from "./components/Like";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -30,6 +31,7 @@ function App() {
       <BsFillCartCheckFill color="red" size={40} />
       */}
       <Button1 onClick={() => console.log("Clicked")}>Click Here</Button1>
+      <Like onClick={() => console.log("Clicked")} />
     </div>
   );
 }
