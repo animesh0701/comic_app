@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      {/*<ListGroup
+      <ListGroup
         items={comics}
         heading="Comics"
         onSelectItem={handleSelectItem}
@@ -29,7 +29,7 @@ function App() {
       )}
       <Button onClick={() => setAlertVisibility(true)}>Buy Now</Button>
       <BsFillCartCheckFill color="red" size={40} />
-      */}
+
       <Button1 onClick={() => console.log("Clicked")}>Click Here</Button1>
       <Like onClick={() => console.log("Clicked")} />
     </div>
