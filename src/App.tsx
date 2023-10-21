@@ -8,6 +8,7 @@ import styles from "./Button1.module.css";
 import Like from "./components/Like";
 import Message from "./components/Message";
 import UpdatePrice from "./components/UpdatePrice";
+import UpdateZip from "./components/UpdateZip";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -36,6 +37,7 @@ function App() {
       <Like onClick={() => console.log("Clicked")} />
       <Message />
       <UpdatePrice />
+      <UpdateZip />
     </div>
   );
 }
