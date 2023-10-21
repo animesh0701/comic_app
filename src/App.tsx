@@ -9,6 +9,7 @@ import Like from "./components/Like";
 import Message from "./components/Message";
 import UpdatePrice from "./components/UpdatePrice";
 import UpdateZip from "./components/UpdateZip";
+import UpdateTag from "./components/UpdateTag";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -38,6 +39,7 @@ function App() {
       <Message />
       <UpdatePrice />
       <UpdateZip />
+      <UpdateTag />
     </div>
   );
 }
