@@ -7,6 +7,7 @@ import Button1 from "./components/Button1";
 import styles from "./Button1.module.css";
 import Like from "./components/Like";
 import Message from "./components/Message";
+import UpdatePrice from "./components/UpdatePrice";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -34,6 +35,7 @@ function App() {
       <Button1 onClick={() => console.log("Clicked")}>Click Here</Button1>
       <Like onClick={() => console.log("Clicked")} />
       <Message />
+      <UpdatePrice />
     </div>
   );
 }
