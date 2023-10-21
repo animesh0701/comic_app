@@ -10,6 +10,7 @@ import Message from "./components/Message";
 import UpdatePrice from "./components/UpdatePrice";
 import UpdateZip from "./components/UpdateZip";
 import UpdateTag from "./components/UpdateTag";
+import UpdateBug from "./components/UpdateBug";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -40,6 +41,7 @@ function App() {
       <UpdatePrice />
       <UpdateZip />
       <UpdateTag />
+      <UpdateBug />
     </div>
   );
 }
