@@ -11,6 +11,8 @@ import UpdatePrice from "./components/UpdatePrice";
 import UpdateZip from "./components/UpdateZip";
 import UpdateTag from "./components/UpdateTag";
 import UpdateBug from "./components/UpdateBug";
+import Navbar from "./components/Navbar";
+import Cart from "./components/Cart";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -19,10 +21,16 @@ const handleSelectItem = (item: string) => {
 
 function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
+  const [cartItem, setCartItem] = useState(["product1", "product2"]);
 
+  const HandleClick = () => {
+    setCartItem(
+      cartItem.filter((item) => item !== cartItem[cartItem.length - 1])
+    );
+  };
   return (
     <div>
-      <ListGroup
+      {/*<ListGroup
         items={comics}
         heading="Comics"
         onSelectItem={handleSelectItem}
@@ -42,6 +50,9 @@ function App() {
       <UpdateZip />
       <UpdateTag />
       <UpdateBug />
+      */}
+      <Navbar items={cartItem} />
+      <Cart items={cartItem} clickHandler={HandleClick} />
     </div>
   );
 }
