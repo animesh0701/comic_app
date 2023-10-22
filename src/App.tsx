@@ -30,7 +30,7 @@ function App() {
   };
   return (
     <div>
-      {/*<ListGroup
+      <ListGroup
         items={comics}
         heading="Comics"
         onSelectItem={handleSelectItem}
@@ -50,7 +50,7 @@ function App() {
       <UpdateZip />
       <UpdateTag />
       <UpdateBug />
-      */}
+
       <Navbar items={cartItem} />
       <Cart items={cartItem} clickHandler={HandleClick} />
     </div>
