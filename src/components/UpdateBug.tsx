@@ -12,15 +12,16 @@ const UpdateBug = () => {
     //setBugs([...bugs, { id: 3, fixed: true }]);
 
     //Update
-    //setBugs(bugs.map((bug) => (bug.id === 2 ? { ...bug, fixed: true } : bug)));
+    setBugs(bugs.map((bug) => (bug.id === 2 ? { ...bug, fixed: true } : bug)));
 
     //Using Immer
-    setBugs(
+    /*setBugs(
       produce((draft) => {
         const bug = draft.find((bug) => bug.id === 2);
         if (bug) bug.fixed = true;
       })
     );
+    */
   };
   return (
     <div>
