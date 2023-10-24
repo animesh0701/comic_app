@@ -13,6 +13,7 @@ import UpdateTag from "./components/UpdateTag";
 import UpdateBug from "./components/UpdateBug";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
+import UpdateName from "./components/UpdateName";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -53,6 +54,8 @@ function App() {
 
       <Navbar items={cartItem} />
       <Cart items={cartItem} clickHandler={HandleClick} />
+
+      <UpdateName />
     </div>
   );
 }
