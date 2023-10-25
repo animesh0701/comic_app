@@ -17,6 +17,7 @@ import UpdateName from "./components/UpdateName";
 import UpdateToppings from "./components/UpdateToppings";
 import UpdateCart from "./components/UpdateCart";
 import ExpandableText from "./components/ExpandableText";
+import ExpandableText1 from "./components/ExpandableText1";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -77,6 +78,21 @@ function App() {
         Fleet lee run a rig no prey, no pay loot swab bounty. Overhaul Jack Tar
         hogshead lugsail nipper square-rigged lugger keelhaul grog blossom loot.
       </ExpandableText>
+      <ExpandableText1>
+        Blow the man down provost marooned to go on account walk the plank rum
+        jolly boat topgallant hornswaggle nipper. Hail-shot gunwalls heave to
+        lateen sail gun Privateer hands coffer hulk avast. Chain Shot galleon
+        draught code of conduct loaded to the gunwalls Brethren of the Coast
+        gangway sutler wench gibbet. Coffer belay hulk fluke topgallant
+        nipperkin loot heave down jack stern. Blow the man down Nelsons folly
+        loaded to the gunwalls gunwalls hang the jib yawl black jack topsail
+        chase keel. Loaded to the gunwalls hearties coxswain parrel starboard
+        swing the lead to go on account come about bilged on her anchor clap of
+        thunder. Crow's nest driver lad fluke boatswain Buccaneer topmast
+        provost brigantine squiffy. Trysail Davy Jones' Locker scuttle Plate
+        Fleet lee run a rig no prey, no pay loot swab bounty. Overhaul Jack Tar
+        hogshead lugsail nipper square-rigged lugger keelhaul grog blossom loot.
+      </ExpandableText1>
     </div>
   );
 }
