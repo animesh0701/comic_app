@@ -18,6 +18,7 @@ import UpdateToppings from "./components/UpdateToppings";
 import UpdateCart from "./components/UpdateCart";
 import ExpandableText from "./components/ExpandableText";
 import ExpandableText1 from "./components/ExpandableText1";
+import Form from "./components/Form";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <ListGroup
+      {/*<ListGroup
         items={comics}
         heading="Comics"
         onSelectItem={handleSelectItem}
@@ -92,7 +93,9 @@ function App() {
         provost brigantine squiffy. Trysail Davy Jones' Locker scuttle Plate
         Fleet lee run a rig no prey, no pay loot swab bounty. Overhaul Jack Tar
         hogshead lugsail nipper square-rigged lugger keelhaul grog blossom loot.
-      </ExpandableText1>
+      </ExpandableText1>*/}
+
+      <Form />
     </div>
   );
 }
