@@ -19,6 +19,7 @@ import UpdateCart from "./components/UpdateCart";
 import ExpandableText from "./components/ExpandableText";
 import ExpandableText1 from "./components/ExpandableText1";
 import Form from "./components/Form";
+import Form1 from "./components/From1";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -96,6 +97,7 @@ function App() {
       </ExpandableText1>*/}
 
       <Form />
+      <Form1 />
     </div>
   );
 }
