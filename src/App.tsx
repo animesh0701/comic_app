@@ -1,7 +1,7 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { BsFillCartCheckFill, BsHeart, BsHeartFill } from "react-icons/bs";
 import Button1 from "./components/Button1";
 import styles from "./Button1.module.css";
@@ -30,6 +30,13 @@ const handleSelectItem = (item: string) => {
 function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
   const [cartItem, setCartItem] = useState(["product1", "product2"]);
+  const ref = useRef<HTMLInputElement>(null);
+
+  //afterRender
+  useEffect(() => {
+    //side effect
+    if (ref.current) ref.current.focus();
+  });
 
   const HandleClick = () => {
     setCartItem(
@@ -95,11 +102,14 @@ function App() {
         provost brigantine squiffy. Trysail Davy Jones' Locker scuttle Plate
         Fleet lee run a rig no prey, no pay loot swab bounty. Overhaul Jack Tar
         hogshead lugsail nipper square-rigged lugger keelhaul grog blossom loot.
-      </ExpandableText1>*/}
+      </ExpandableText1>
 
       <Form />
       <Form1 />
       <Form3 />
+      */}
+
+      <input ref={ref} type="text" className="form-control" />
     </div>
   );
 }
