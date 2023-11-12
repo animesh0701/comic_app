@@ -21,6 +21,7 @@ import ExpandableText1 from "./components/ExpandableText1";
 import Form from "./components/Form";
 import Form1 from "./components/Form1";
 import Form3 from "./components/Form3";
+import ProductList from "./components/ProductList";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -30,13 +31,7 @@ const handleSelectItem = (item: string) => {
 function App() {
   const [alertVisible, setAlertVisibility] = useState(false);
   const [cartItem, setCartItem] = useState(["product1", "product2"]);
-  const ref = useRef<HTMLInputElement>(null);
-
-  //afterRender
-  useEffect(() => {
-    //side effect
-    if (ref.current) ref.current.focus();
-  });
+  const [category, setCategory] = useState("");
 
   const HandleClick = () => {
     setCartItem(
@@ -108,8 +103,16 @@ function App() {
       <Form1 />
       <Form3 />
       */}
-
-      <input ref={ref} type="text" className="form-control" />
+      <select
+        className="form-select"
+        onChange={(e) => {
+          setCategory(e.target.value);
+        }}
+      >
+        <option value="clothing">Clothing</option>
+        <option value="household">Household</option>
+      </select>
+      <ProductList category={category} />
     </div>
   );
 }
