@@ -23,6 +23,7 @@ import Form1 from "./components/Form1";
 import Form3 from "./components/Form3";
 import ProductList from "./components/ProductList";
 import Chat from "./components/Chat";
+import UsersList from "./components/UsersList";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -114,8 +115,9 @@ function App() {
         <option value="household">Household</option>
       </select>
       <ProductList category={category} />
-      */}
       <Chat />
+      */}
+      <UsersList />
     </div>
   );
 }
