@@ -24,6 +24,7 @@ import Form3 from "./components/Form3";
 import ProductList from "./components/ProductList";
 import Chat from "./components/Chat";
 import UsersList from "./components/UsersList";
+import ConsumeNet from "./components/ConsumeNet";
 const comics = ["Nirvana", "Boundary", "JJK", "CSM", "OnePiece"];
 
 const handleSelectItem = (item: string) => {
@@ -116,8 +117,9 @@ function App() {
       </select>
       <ProductList category={category} />
       <Chat />
-      */}
       <UsersList />
+        */}
+      <ConsumeNet />
     </div>
   );
 }
